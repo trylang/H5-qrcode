@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>扫码送券</title>
+    <script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+    <script type="text/javascript" src="./js/qrcodejs/qrcode.js"></script>
+    <style>
+      html,
+      body {
+        margin: 0;
+        padding: 0;
+        height: 110%;
+      }
+      .body {
+        background: url(./images/bg.png) no-repeat;
+        background-position: center center;
+        background-size: cover;
+        height: 110%;
+      }
+      #qrcode {
+        position: absolute;
+        width: 220px;
+        height: 220px;
+        left: 50%;
+        margin-left: -110px;
+        top: 65%;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="body"><div id="qrcode"></div></div>
+    <script src="./js/util.js"></script>
+    <script src="./js/index.js"></script>
+  </body>
+</html>
