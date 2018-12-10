@@ -47,7 +47,7 @@ $(document).ready(function() {
   // 轮询 
   function loop () {
     if (tenantId && detail && detail.changeTime) {
-      setInterval(function() {
+      setTimeout(function() {
         getDetail(tenantId);
       }, detail.changeTime * 1000);
     }
